@@ -14,14 +14,13 @@ div.insertAdjacentElement("beforebegin", header);
 // Добавить в него 3 элемента с текстом "1, 2, 3"
 const ul = `
 <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
+    <li><a href='dom.html'>dom-2</a></li>
+    <li>dom-3</li>
+    <li>dom-4</li>
 </ul>
 `;
 // Поместить список внутрь элемента с классом wrapper
 div.innerHTML = ul;
-console.log(body);
 // =================================================
 // Создать изображение
 const img = document.createElement("img");
@@ -107,3 +106,4 @@ function handleClick(e) {
 buttons.forEach((button) => {
   button.addEventListener("click", handleClick);
 });
+console.log(body);
