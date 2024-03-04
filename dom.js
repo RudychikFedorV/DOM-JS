@@ -15,7 +15,7 @@ div.insertAdjacentElement("beforebegin", header);
 const ul = `
 <ul>
     <li><a href='dom.html'>dom-2</a></li>
-    <li>dom-3</li>
+    <li><a href='events.html'>events</a></li>
     <li>dom-4</li>
 </ul>
 `;
