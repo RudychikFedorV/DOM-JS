@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="btn">Click</button>
+        <button class="btn2">Click2</button>
+
+        <button class="btns">Click01</button>
+        <button class="btns">Click02</button>
+        <button class="btns">Click03</button>
+        <button class="btns">Click04</button>
+    </div>
+
+    <script>
+        const button = document.querySelector('.btn')
+        const button2 = document.querySelector('.btn2')
+        // function handleClick() {
+        //     console.log('click')
+        // }
+        const handleClick = () => {
+            console.log('click')
+        }
+        button.addEventListener('click', handleClick)
+        button2.addEventListener('click', handleClick)
+        button2.removeEventListener('click', handleClick)
+
+
+        const buttons = document.querySelectorAll('.btns')
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                console.log('clicked!!!')
+            })
+        })
+        
+    </script>
+</body>
+
+</html>
